@@ -66,3 +66,27 @@ const myFunction = function(){
 myFunction()
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//MEMORY CONCEPT
+
+//Primitive datatypes take stack memory and non primitive(reference) take heap memory
+// in stack memory, we have a copy of the original
+// in heap memory, we have a reference to the original
+
+let myname= "Gyaninder"
+let newname= myname
+newname= "Rahul"
+
+console.log(myname)
+console.log(newname)
+
+let obj1= {
+    name: "rahul",
+    age: 20,
+}
+
+let obj2= obj1
+obj2.name= "radha"
+console.log(obj1)
+console.log(obj2)
